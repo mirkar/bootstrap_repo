@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    
+    <link href="css/dashboard.css" rel="stylesheet" media="screen">
+    
+    <title>Jquery based dashboard</title>
+</head>
+
+<body>
+
+<!-- Add navbar-inverse to class if needed -->
+<nav role="navigation" class="navbar navbar-default  navbar-fixed-top ">
+ <div class="container-fluid">
+
+	 <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand"><img src="images/att-logo-with-line.gif" alt="logo">SQM Tools v1.0</a>
+     </div> <!-- End of navbar-header -->
+     
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#"> Premier </a></li>
+                <li><a href="#"> BID </a></li>
+				<li><a href="#"> EBIZ </a></li>
+                <li><a href="#"> Cloud Express </a></li>
+            </ul>		
+	</div> <!-- End of navbarCollapse -->
+	
+ </div> <!-- End of container-fluid -->
+</nav>
+
+<div class="container-fluid">
+	
+     <div class="row">
+		 
+		<div class="col-md-2 col-sm-3 sidebar">
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#"> <span class="glyphicon glyphicon-dashboard"> </span> Dashboards</a></li>
+				<li><a href="#"> <span class="glyphicon glyphicon-stats"> </span> Reports</a></li>
+				<li><a href="#"> <span class="glyphicon glyphicon-cog"> </span> Settings</a></li>
+				<li><a href="#"> <span class="glyphicon glyphicon-wrench"> </span> Tools</a></li>			</ul>
+		</div>
+		
+		<div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3">
+			
+			<ul class="breadcrumb">
+				<li><a href="#">Applications</a></li>
+				<li><a href="#">Premier</a></li>
+				<li><a href="#">Allen</a></li>
+				<li class="active">Weblogic</li>
+			</ul>
+			
+<div class="panel panel-info">
+	  <div class="panel-heading">
+    <h3 class="panel-title">Main</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  </div>
+
+
+<div class="panel panel-info">
+	  <div class="panel-heading">
+    <h3 class="panel-title">Fulfillment</h3>
+  </div>
+  <div class="panel-body">
+    Panel content
+  </div>
+  </div>
+
+		</div>	
+	
+	</div>	
+	
+
+     
+
+		
+
+</div> <!-- End of container-fluid for the sidebar -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.routes.js"></script>
+	<script type="text/javascript" src="js/handlebars-v3.0.0.js"></script>
+
+
+
+	<script id="usage1-template" type="text/x-handlebars-template"></script>
+
+
+	<script src="data/appstatus.js"></script>
+	<script src="data/www_premier_config.js"></script>
+	<script src="data/sample_metrics.js"></script>
+
+
+	<script src="js/sqmdashboard.js"></script>
+    <script src="js/sqm-helpers.js"></script>
+
+
+    <link href="css/dashboard.css" rel="stylesheet" media="screen">
+
+
+<script id="sqm-reports-template" type="text/x-handlebars-template">
+<div id='main-wkrspace'>
+	<ul class="breadcrumb">
+		<li><a href="#/sqm/">SQM</a></li>
+		<li class="active">{{title}}</li>
+	</ul>
+	<div class="alert alert-info" role="alert">{{body}}</div>
+</div>
+</script>
+
+
+    <title>Jquery based dashboard</title>
+</head>
+
+<body>
+
+<!-- Add navbar-inverse to class if needed -->
+<nav role="navigation" class="navbar navbar-default  navbar-fixed-top ">
+ <div class="container-fluid">
+
+	 <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <a href="#/" class="navbar-brand"><img src="images/att-logo-with-line.gif" alt="logo">SQM Tools v1.1</a>
+     </div> <!-- End of navbar-header -->
+
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+			<ul id="main-navbar" class="nav navbar-nav navbar-right">
+				<li><a href="#/sqm/"> SQM </a></li>
+        <li><a href="#/jenkins/"> Jenkins </a></li>
+				<li><a href="#/nagios/"> Nagios </a></li>
+        <li><a href="#/splunk/"> Splunk </a></li>
+      </ul>		
+	</div> <!-- End of navbarCollapse -->
+
+ </div> <!-- End of container-fluid -->
+</nav>
+
+<div class="container-fluid">
+
+     <div class="row">
+
+		<div class="col-md-2 col-sm-3 sidebar">
+				<ul id="left-sidebar" class="nav nav-pills nav-stacked nav-sidebar"></ul>
+		</div>
+
+		<div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3" id="main-wrkspace-content" >
+
+
+		</div>	<!-- End of main column -->
+
+	</div>	<!-- End of the row containg the sidebar and main columns -->
+
+</div> <!-- End of container-fluid for the sidebar and main-->
+
+
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+dashboard prototype based on bootstrap and angularjs

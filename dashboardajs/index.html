@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <script src="js/angular.js"></script>
+    <script src="js/ui-bootstrap-0.12.0.js"></script>
+ 
+ 
+
+	<script src="js/bootstrap.min.js"></script>
+    
+    <link href="css/dashboard.css" rel="stylesheet" media="screen">
+    
+    <title>AngularJS based dashboard</title>
+</head>
+
+<body>
+
+<!-- Add navbar-inverse to class if needed -->
+<nav role="navigation" class="navbar navbar-default  navbar-fixed-top ">
+ <div class="container-fluid">
+
+	 <div class="navbar-header">
+     <a href="#" class="navbar-brand"><img src="images/att-logo-with-line.gif" alt="logo">SQM Dashboard v2.0</a>
+     </div> <!-- End of navbar-header -->
+     
+    
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#"> Premier </a></li>
+                <li><a href="#"> BID </a></li>
+				<li><a href="#"> EBIZ </a></li>
+                <li><a href="#"> Cloud Express </a></li>
+            </ul>		
+	
+	
+ </div> <!-- End of container-fluid -->
+</nav>
+
+<div class="container-fluid">  <!-- sidebar and main -->
+	
+	<div class="row">
+    
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Dashboards</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Tools</a></li>
+          </ul>
+         </div>
+         
+         <div class="col-md-10 col-md-offset-2 col-sm-9 col-sm-offset-3">    
+			
+			<ul class="breadcrumb">
+				<li class="active">Applications</li>
+			</ul>	
+			
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Premier</h3>
+				</div>
+				<div class="panel-body">
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<span class="glyphicon glyphicon-dashboard"></span> Apache <span class="label label-success">Up 17</span> <span class="label label-warning">Down 1</span>
+						</a>					
+						<a href="#" class="list-group-item">
+							<span class="glyphicon glyphicon-dashboard"></span> Weblogic <span class="label label-success">Up 118</span> <span class="label label-warning">Down 12</span>
+						</a>					
+					</div>
+				</div>
+			</div>
+    
+		</div>
+
+         
+    </div> <!-- End of the row containg the sidebar and main columns -->
+    
+
+</div> <!-- End of container-fluid for the sidebar and main-->
+
+</body>
+</html>

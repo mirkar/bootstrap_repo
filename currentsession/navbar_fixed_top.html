@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen">
+    <script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    
+    <title>Navbar Example 1</title>
+</head>
+
+<body>
+
+
+<nav role="navigation" class="navbar navbar-default navbar-inverse navbar-fixed-top ">
+	<div class="container-fluid">
+		
+       <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">SQM Dashboard</a>
+        </div>
+        
+		<div id="navbarCollapse" class="collapse navbar-collapse"> 
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="#"> Books and Videos </a></li>
+                <li><a href="#"> Articles </a></li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#"> Categories <b class="caret"></b></a>
+                  <ul role="menu" class="dropdown-menu">
+                    <li><a href="#"> Web development </a></li>
+                    <li><a href="#"> Game Development </a></li>
+                    <li><a href="#"> Big Data and Business Intelligence </a></li>
+                    <li><a href="#"> Virtualization and Cloud </a></li>
+                    <li><a href="#"> Networking and Servers </a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"> Miscellaneous </a></li>
+                  </ul>
+                </li                
+			</ul>
+		</div> 
+		
+	</div>
+</nav>
+
+	<div class="container-fluid">	
+		
+		<div class="row">
+			<div class="col-md-12 col-sm-12">
+				<h3>About this example</h3>
+				<p>Navbar fixed top <code>&lt;nav role="navigation" class="navbar navbar-default navbar-fixed-top"&gt;</code>. Container is not a child of a nav element but rather the direct child of body and set as 
+				&lt;div class="container-fluid"&gt;. To avoid overlapping the container with nav, <code>body { padding-top: 35px; }</code> in styles.css is used</p>
+				
+			</div>
+		</div>
+		
+		
+		<div class="row">
+			<div class="col-md-6 col-sm-6" id="r1c1">
+				<h3>Two Equal Columns on a row</h3>
+				<p>Lorem ipsum dolor sit amet, maecenas lectus. Ut aliquam, gravida viverra, nulla aliquam congue condimentum, hymenaeos proin lacus pede. Egestas mi nec, aliquet ultrices etiam lobortis donec arcu, fringilla leo lorem, tempor ultricies felis a est quam. Augue nonummy dapibus et, integer sit nam curabitur consectetuer eget. Proin elit, maecenas vestibulum lorem luctus torquent ante, turpis quam id. Vitae venenatis, vel arcu feugiat neque in aliquam justo, phasellus scelerisque vestibulum dis porttitor torquent augue. Ut facilisi nec cras, in diam, elit vivamus, et quis pretium at libero maecenas</p>
+			</div>
+			
+			<div class="col-md-6 col-sm-6" id="r1c2">
+				<h3>Two Equal Columns on a row</h3>
+				<p>
+					Ut et id, vestibulum hendrerit fermentum nam wisi amet, animi nulla, aliquet aliquam ultricies amet pellentesque nibh dolor, ut libero rhoncus commodo enim. Metus rhoncus turpis sed dolor in orci, velit felis sodales sit quis odio, orci a quam quam pede, venenatis mi nisl per class mauris sit, erat fermentum. Felis est nunc rutrum curabitur non arcu. Nulla mollis consectetuer pellentesque est ultrices a, nam ultricies ac malesuada ut. Eu amet risus convallis sociosqu vestibulum in, aliquam aliquam posuere rhoncus dui quis, porta sollicitudin sapien per turpis. Nullam et duis integer suspendisse, dicta leo tortor sapien per leo, erat sagittis et consectetuer eget quod sem. Eros arcu adipiscing etiam congue turpis, eu arcu, id odio sed non, sed mollis et est curae ipsum lacinia, duis wisi fringilla. Amet laoreet ullamcorper porttitor interdum dolor vitae. Dui sollicitudin faucibus, nibh curabitur lorem lobortis sed. Mi est adipiscing nunc in a, laoreet tellus amet proin quis purus euismod. Et nonummy mauris.
+				</p>
+				<button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span> Stop The Server</button>
+				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Settings</button>
+			</div>
+		</div>
+		
+				<div class="row">
+			<div class="col-md-3 col-sm-3" id="r1c1">
+				<h3>Two No Equal Columns on a row</h3>
+				<p>Lorem ipsum dolor sit amet, maecenas lectus. Ut aliquam, gravida viverra, nulla aliquam congue condimentum, hymenaeos proin lacus pede. Egestas mi nec, aliquet ultrices etiam lobortis donec arcu, fringilla leo lorem, tempor ultricies felis a est quam. Augue nonummy dapibus et, integer sit nam curabitur consectetuer eget. Proin elit, maecenas vestibulum lorem luctus torquent ante, turpis quam id. Vitae venenatis, vel arcu feugiat neque in aliquam justo, phasellus scelerisque vestibulum dis porttitor torquent augue. Ut facilisi nec cras, in diam, elit vivamus, et quis pretium at libero maecenas</p>
+			</div>
+			
+			<div class="col-md-9 col-sm-9" id="r1c2">
+				<h3>Two No Equal Columns on a row</h3>
+				<p>
+					Ut et id, vestibulum hendrerit fermentum nam wisi amet, animi nulla, aliquet aliquam ultricies amet pellentesque nibh dolor, ut libero rhoncus commodo enim. Metus rhoncus turpis sed dolor in orci, velit felis sodales sit quis odio, orci a quam quam pede, venenatis mi nisl per class mauris sit, erat fermentum. Felis est nunc rutrum curabitur non arcu. Nulla mollis consectetuer pellentesque est ultrices a, nam ultricies ac malesuada ut. Eu amet risus convallis sociosqu vestibulum in, aliquam aliquam posuere rhoncus dui quis, porta sollicitudin sapien per turpis. Nullam et duis integer suspendisse, dicta leo tortor sapien per leo, erat sagittis et consectetuer eget quod sem. Eros arcu adipiscing etiam congue turpis, eu arcu, id odio sed non, sed mollis et est curae ipsum lacinia, duis wisi fringilla. Amet laoreet ullamcorper porttitor interdum dolor vitae. Dui sollicitudin faucibus, nibh curabitur lorem lobortis sed. Mi est adipiscing nunc in a, laoreet tellus amet proin quis purus euismod. Et nonummy mauris.
+				</p>
+				<button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span> Stop The Server</button>
+				<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-cog"></span> Settings</button>
+			</div>
+		</div>
+    
+		<div class="row">
+			<div class="col-md-4" id="r1c1">
+				<h2>Three Columns on a row</h2>
+				<p>The class prefixes used for small phone screens, tablets,
+					small desktop screens, and large desktop screens are .col-xs-,
+					.col-sm-, .col-md-, and .col-lg-, respectively. The default gutter
+					width is 30 px.The class prefixes used for small phone screens, tablets,
+					small desktop screens, and large desktop screens are .col-xs-, .col-sm-,
+					.col-md-, and .col-lg-, respectively. The default gutter width is 30 px.
+				</p>
+			</div>
+	
+			<div class="col-md-4" id="r1c2">
+				<h2>Three Columns on a row</h2>
+				<p>While the column width for small devices is automatic, the column widths for tablets, small desktops, and large screens are 62 px, 81 px, and 97 px, respectively.</p>
+			</div>
+	
+			<div class="col-md-4" id="r1c3">
+				<h2>Three Columns on a row</h2>
+				<p>You can create rows and columns on the page using the row and column CSS classes. You have to use rows to create a horizontal group of columns, and only columns can be immediate children of rows. Usually, you can use the .col-md- Grid classes to develop a system that is displayed as stacked in small devices; they turn horizontal on the desktop and large screens. The col class should be used in conjunction with the .col-md-X class (where X is the grid unit width that the block element should have) to add a width to the columns. The total number of columns in a row should not be greater than 12, which is the default for the maximum number of columns in a single row on desktops and large screens.</p>
+			</div>
+		</div>
+		
+  
+
+	</div>	<!-- end of class="container-fluid" -->	
+	
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <title>Using the Bootstrap Grid classes</title>
+</head>
+
+<body>
+
+<div class="container">
+	<h1>Premier Dashboard</h1>
+    <p class="ex">An example to showcase the Bootstrap Grid classes</p>
+    
+    <div class="row">
+		<div class="col-md-4" id="r1c1">
+			<h2>R1C1 CLS col-md-4</h2>
+			<p>The class prefixes used for small phone screens, tablets,
+			 small desktop screens, and large desktop screens are .col-xs-,
+			  .col-sm-, .col-md-, and .col-lg-, respectively. The default gutter
+			   width is 30 px.The class prefixes used for small phone screens, tablets,
+			    small desktop screens, and large desktop screens are .col-xs-, .col-sm-,
+			     .col-md-, and .col-lg-, respectively. The default gutter width is 30 px.</p>
+		</div>
+	
+		<div class="col-md-4" id="r1c2">
+			<h2>R1C2 CLS col-md-4</h2>
+			<p>While the column width for small devices is automatic, the column widths for tablets, small desktops, and large screens are 62 px, 81 px, and 97 px, respectively.</p>
+		</div>
+	
+		<div class="col-md-4" id="r1c3">
+			<h2>R1C3 CLS col-md-4</h2>
+			<p>You can create rows and columns on the page using the row and column CSS classes. You have to use rows to create a horizontal group of columns, and only columns can be immediate children of rows. Usually, you can use the .col-md- Grid classes to develop a system that is displayed as stacked in small devices; they turn horizontal on the desktop and large screens. The col class should be used in conjunction with the .col-md-X class (where X is the grid unit width that the block element should have) to add a width to the columns. The total number of columns in a row should not be greater than 12, which is the default for the maximum number of columns in a single row on desktops and large screens.</p>
+		</div>
+		
+	 </div>
+		
+    <div class="row">
+		
+		<div class="col-md-4 col-sm-6" id="r2c1">
+			<h2>Customize grid for small devices</h2>
+			<p>As already mentioned, columns will be displayed one after the other on a small screen. Suppose that you want a column-based format for small devices as well. In such a scenario, you have to include the col-sm-X CSS class in the code.</p>
+		</div>
+		
+		<div class="col-md-4 col-sm-6" id="r2c2">
+			<h2>Customize grid for small devices</h2>
+		</div>
+		
+		<div class="col-md-4 col-sm-12" id="r2c2">
+			<h2>Customize grid for small devices</h2>
+		</div>
+		
+    </div>
+    
+    <div class="row"></div>
+    
+</div>
+
+</body>
+</html>

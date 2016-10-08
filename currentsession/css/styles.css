@@ -1,0 +1,18 @@
+ body { padding-top: 35px; }
+ 
+ p.ex {
+    background-color: yellow;
+}
+
+#r1c1 {
+	background: #5C7080;
+}
+
+#r1c2 {
+	background: #6BC0FF;
+}
+
+#r1c3 {
+	background: #BDB76B;
+}
+

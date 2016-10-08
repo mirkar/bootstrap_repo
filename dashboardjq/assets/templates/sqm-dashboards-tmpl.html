@@ -1,0 +1,31 @@
+<ul class="breadcrumb">
+	<li><a href="#/sqm/">SQM</a></li>
+	<li class="active">Dashboards</li>
+</ul>
+
+{{#each applications}}
+<div class="panel panel-info">
+
+  <div class="panel-heading">
+    <h3 class="panel-title">{{appName}}</h3>
+   </div>
+
+  <div class="panel-body">
+    <div class="list-group">
+		{{#each services}}
+				<a href="#" class="list-group-item">
+				<span class="glyphicon glyphicon-dashboard"></span> {{serviceName}} 
+				<span class="label label-success">Up: {{serviceUp}}</span> 
+				<span class="label label-warning">Down: {{serviceDown}}</span>
+				</a>					
+  		{{/each}}			
+    </div>
+  </div>
+
+
+
+</div>
+{{/each}}
+
+
+
